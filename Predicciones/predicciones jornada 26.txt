@@ -1,0 +1,54 @@
+jornada 26 sin cuotas:
+1.- Valladolid - Bilbao: El resultado del partido será 2 según el modelo sin cuotas. Las probabilidades son de X - 34.194132685661316%, 1 - 12.909851968288422 y 2 - 52.89601683616638
+2.- Málaga - Levante: El resultado del partido será 0 según el modelo sin cuotas. Las probabilidades son de X - 44.63043510913849%, 1 - 33.99131894111633 y 2 - 21.378250420093536
+3.- Almería - Cádiz: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 21.417559683322906%, 1 - 61.51602864265442 y 2 - 17.066413164138794
+4.- Rayo Vallecano - Girona: El resultado del partido será 2 según el modelo sin cuotas. Las probabilidades son de X - 36.39478087425232%, 1 - 7.409583032131195 y 2 - 56.195634603500366 
+5.- Celta - Espanyol: El resultado del partido será 2 según el modelo sin cuotas. Las probabilidades son de X - 35.69402098655701%, 1 - 14.743708074092865 y 2 - 49.56226646900177
+6.- Atletico de Madrid - Valencia: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 38.6734664440155%, 1 - 45.941391587257385 y 2 - 15.385137498378754
+7.- betis - mallorca: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 38.434743881225586%, 1 - 47.21129536628723 y 2 - 14.353956282138824
+8.-Osasuna - Villarreal: El resultado del partido será 2 según el modelo sin cuotas. Las probabilidades son de X - 23.760324716567993%, 1 - 4.558489844202995 y 2 - 71.68118357658386
+9.- Real sociedad - elche: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 16.771170496940613%, 1 - 62.06405758857727 y 2 - 21.164770424365997
+10.- Getafe - Sevilla: El resultado del partido será 2 según el modelo sin cuotas. Las probabilidades son de X - 24.90345686674118%, 1 - 8.432766795158386 y 2 - 66.66377782821655
+11.- Barcelona - real Madrid: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 36.371129751205444%, 1 - 51.49151086807251 y 2 - 12.137357890605927
+12.- Albacete - Granada: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 17.49013364315033%, 1 - 56.14466071128845 y 2 - 26.365208625793457
+13.- ponferradina - alaves: El resultado del partido será 2 según el modelo sin cuotas. Las probabilidades son de X - 20.29968649148941%, 1 - 5.265428498387337 y 2 - 74.43488836288452
+14.- burgos - sporting: El resultado del partido será 0 según el modelo sin cuotas. Las probabilidades son de X - 53.94477844238281%, 1 - 12.140525877475739 y 2 - 33.91469120979309
+15.- Huesca - zaragoza: El resultado del partido será 1 según el modelo sin cuotas. Las probabilidades son de X - 21.108870208263397%, 1 - 71.38511538505554 y 2 - 7.5060151517391205
+16.- lugo - racing: El resultado del partido será 0 según el modelo sin cuotas. Las probabilidades son de X - 39.27498161792755%, 1 - 26.947295665740967 y 2 - 33.777716755867004
+17.- Tenerife - las palmas: El resultado del partido será 0 según el modelo sin cuotas. Las probabilidades son de X - 41.16625785827637%, 1 - 18.14665049314499 y 2 - 40.68709313869476
+jornada 26 con cuotas:
+1.- Valladolid - Bilbao: El resultado del partido será 2 según el modelo con cuotas. Las probabilidades son de X - 30.56844472885132%, 1 - 22.76691347360611 y 2 - 46.66464328765869
+2.- Málaga - Levante: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 23.729412257671356%, 1 - 48.854297399520874 y 2 - 27.41628885269165
+3.- Almería - Cádiz: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 6.92465752363205%, 1 - 74.98722076416016 y 2 - 18.08812767267227
+4.- Rayo Vallecano - Girona: El resultado del partido será 2 según el modelo con cuotas. Las probabilidades son de X - 27.26939022541046%, 1 - 29.305484890937805 y 2 - 43.42513084411621
+5.- Celta - Espanyol: El resultado del partido será 0 según el modelo con cuotas. Las probabilidades son de X - 39.153388142585754%, 1 - 24.43521022796631 y 2 - 36.4113986492157
+6.- Atletico de Madrid - Valencia: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 34.90940034389496%, 1 - 54.64106202125549 y 2 - 10.449540615081787
+7.- betis - mallorca: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 16.9662207365036%, 1 - 66.51431918144226 y 2 - 16.519463062286377
+8.-Osasuna - Villarreal: El resultado del partido será 2 según el modelo con cuotas. Las probabilidades son de X - 19.503286480903625%, 1 - 24.158568680286407 y 2 - 56.33814334869385
+9.- Real sociedad - elche: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 10.286910086870193%, 1 - 75.85532069206238 y 2 - 13.85776698589325
+10.- Getafe - Sevilla: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 26.177284121513367%, 1 - 51.86038613319397 y 2 - 21.962328255176544
+11.- Barcelona - real Madrid: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 20.4741433262825%, 1 - 67.55229830741882 y 2 - 11.973556131124496
+12.- Albacete - Granada: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 11.854352056980133%, 1 - 50.7452666759491 y 2 - 37.40038275718689
+13.- ponferradina - alaves: El resultado del partido será 2 según el modelo con cuotas. Las probabilidades son de X - 16.430456936359406%, 1 - 18.477749824523926 y 2 - 65.09179472923279
+14.- burgos - sporting: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 28.534093499183655%, 1 - 50.396883487701416 y 2 - 21.06902450323105
+15.- Huesca - zaragoza: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 11.013590544462204%, 1 - 64.88900184631348 y 2 - 24.09740537405014
+16.- lugo - racing: El resultado del partido será 2 según el modelo con cuotas. Las probabilidades son de X - 16.731256246566772%, 1 - 31.700462102890015 y 2 - 51.56828165054321
+17.- Tenerife - las palmas: El resultado del partido será 1 según el modelo con cuotas. Las probabilidades son de X - 20.69680392742157%, 1 - 47.1448689699173 y 2 - 32.15833306312561
+jornada 26 ensamblado:
+1.- Valladolid - Bilbao: El resultado del partido será 2 según la media de modelos. Las probabilidades son de X - 36.791202425956726%, 1 - 16.675008833408356 y 2 - 46.53378427028656
+2.- Málaga - Levante: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 38.47253620624542%, 1 - 38.721320033073425 y 2 - 22.806143760681152
+3.- Almería - Cádiz: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 19.768643379211426%, 1 - 63.800424337387085 y 2 - 16.43092632293701
+4.- Rayo Vallecano - Girona: El resultado del partido será 2 según la media de modelos. Las probabilidades son de X - 36.27781867980957%, 1 - 17.16030091047287 y 2 - 46.56187891960144
+5.- Celta - Espanyol: El resultado del partido será 0 según la media de modelos. Las probabilidades son de X - 41.50477051734924%, 1 - 18.311884999275208 y 2 - 40.18334448337555
+6.- Atletico de Madrid - Valencia: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 40.91373085975647%, 1 - 47.01136350631714 y 2 - 12.074904143810272
+7.- betis - mallorca: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 32.41566717624664%, 1 - 53.15436124801636 y 2 - 14.429967105388641
+8.-Osasuna - Villarreal: El resultado del partido será 2 según la media de modelos. Las probabilidades son de X - 26.74277424812317%, 1 - 13.422103226184845 y 2 - 59.835124015808105
+9.- Real sociedad - elche: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 19.16845142841339%, 1 - 64.46231603622437 y 2 - 16.369229555130005
+10.- Getafe - Sevilla: El resultado del partido será 2 según la media de modelos. Las probabilidades son de X - 30.39643168449402%, 1 - 28.180494904518127 y 2 - 41.423070430755615
+11.- Barcelona - real Madrid: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 33.090728521347046%, 1 - 55.64004182815552 y 2 - 11.269231140613556
+12.- Albacete - Granada: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 20.237097144126892%, 1 - 49.959418177604675 y 2 - 29.803481698036194
+13.- ponferradina - alaves: El resultado del partido será 2 según la media de modelos. Las probabilidades son de X - 23.689088225364685%, 1 - 11.09735444188118 y 2 - 65.21354913711548
+14.- burgos - sporting: El resultado del partido será 0 según la media de modelos. Las probabilidades son de X - 45.07164657115936%, 1 - 29.2294442653656 y 2 - 25.698912143707275
+15.- Huesca - zaragoza: El resultado del partido será 1 según la media de modelos. Las probabilidades son de X - 21.535497903823853%, 1 - 63.69333863258362 y 2 - 14.77116346359253
+16.- lugo - racing: El resultado del partido será 2 según la media de modelos. Las probabilidades son de X - 32.69856870174408%, 1 - 27.411451935768127 y 2 - 39.889976382255554
+17.- Tenerife - las palmas: El resultado del partido será 0 según la media de modelos. Las probabilidades son de X - 35.43599545955658%, 1 - 30.516687035560608 y 2 - 34.04731750488281

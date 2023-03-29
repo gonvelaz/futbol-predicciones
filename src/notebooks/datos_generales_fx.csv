@@ -1,0 +1,22 @@
+id_equipo_local,id_equipo_visitante,goles_local,goles_visitante,resultado,arbitro,fixture_id,fecha_timestamp,goles_descanso_local,goles_descanso_visitante,estadio,season
+548,724,0,0,0,"Antonio Mateu Lahoz, Spain",878180,1677873600,0,0,Reale Arena,2022
+8157,534,0,0,0,"Jose Antonio Lopez Toca, Spain",878641,1677873600,0,0,Estadi Nacional,2022
+530,536,6,1,1,"Guillermo Cuadra Fernandez, Spain",878172,1677960000,2,1,Estádio Cívitas Metropolitano,2022
+546,547,3,2,1,"Juan Martinez Munuera, Spain",878175,1677934800,3,0,Coliseum Alfonso Pérez,2022
+723,533,0,2,2,"Pablo Gonzales Fuertes, Spain",878176,1677942900,0,0,Power Horse Stadium – Estadio de los Juegos Mediterráneos,2022
+798,797,0,1,2,"José Luis Munuera Montero, Spain",878179,1677951000,0,0,Visit Mallorca Estadi,2022
+9580,715,1,3,2,"Aitor Gorostegui Fernandez Orte, Spain",878642,1677942900,1,0,Estadio Municipal de El Plantío,2022
+726,539,3,0,1,"Mateo Busquets Ferrer, Spain",878643,1677951000,1,0,Estadio El Alcoraz,2022
+799,718,1,0,1,"Rafael Sanchez Lopez, Spain",878646,1677960000,1,0,Estadio Municipal de Anduva,2022
+719,545,0,1,2,"Alejandro Quintero Gonzalez, Spain",878650,1677951000,0,1,Estadio Heliodoro Rodríguez Lopéz,2022
+720,540,2,1,1,"Valentin Pizarro Gomez, Spain",878181,1678021200,1,0,Estadio Municipal José Zorrilla,2022
+529,532,1,0,1,"Javier Alberola Rojas, Spain",878173,1678029300,1,0,Spotify Camp Nou,2022
+728,531,0,0,0,"Mario Melero Lopez, Spain",878177,1678037400,0,0,Estadio de Vallecas,2022
+543,541,0,0,0,"Cesar Soto Grado, Spain",878174,1678046400,0,0,Estadio Benito Villamarín,2022
+716,732,0,0,0,"Raul Martin Gonzalez Frances, Spain",878644,1678037400,0,0,Estadio Anxo Carro,2022
+535,4665,0,1,2,"Alvaro Moreno Aragon, Spain",878645,1678037400,0,0,Estadio La Rosaleda,2022
+722,731,2,1,1,"Oliver de la Fuente Ramos, Spain",878647,1678029300,2,1,Estadio Carlos Belmonte,2022
+4907,5262,0,3,2,"Damaso Arcediano Monescillo, Spain",878649,1678046400,0,1,Estadio El Toralín,2022
+537,9390,0,1,2,"Andres Fuentes Molina, Spain",878651,1678021200,0,0,Estadio Municipal de Butarque,2022
+727,538,0,0,0,"Jose Maria Sanchez Martinez, Spain",878178,1678132800,0,0,Estadio El Sadar,2022
+9595,542,1,0,1,"Luis Mario Milla Alvendiz, Spain",878648,1678132800,1,0,Estadio de la Cerámica,2022
