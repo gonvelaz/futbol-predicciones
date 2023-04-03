@@ -58,14 +58,14 @@ odd_menos_25 = 2.3
 arbitro ='Saul Ais Reig, Spain'
 estadio = 'Estadio La Rosaleda (Málaga)'
 season = 2022  
-ids_lesionados = [10057]
+ids_lesionados = []
 ids_titulares = [
-46755, 77623, 46818, 24793, 46759, 8627, 47388, 46691, 937, 47471, 47495
+
 ]
 
-#datos_nuevos = data_processing.creacion_datos_nuevos(df_final,id_equipo_local, id_equipo_visitante,
-#                                                     odd_1, odd_x, odd_2,
-#                                                     arbitro, estadio, season, ids_lesionados, ids_titulares)
+datos_nuevos = data_processing.creacion_datos_nuevos(df_final,id_equipo_local, id_equipo_visitante,
+                                                     odd_1, odd_x, odd_2,odd_mas_25, odd_menos_25,
+                                                     arbitro, estadio, season, ids_lesionados, ids_titulares)
 
 #Instancio la clase entrenamiento del modelo
 #train_model = train_model()

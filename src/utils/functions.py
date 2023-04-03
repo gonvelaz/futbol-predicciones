@@ -653,3 +653,176 @@ class data_processing():
         df_datos_nuevos_final['odd_menos_25'] = odd_menos_25
 
         return df_datos_nuevos_final
+    
+    def creacion_datos_nuevos_stats(self, df_partidos,id_equipo_local, id_equipo_visitante,
+                              odd_1, odd_x, odd_2, odd_mas_25,odd_menos_25,
+                              arbitro, estadio, season):
+        #Leo el csv donde estan todos los datos completos de los partidos. Se ha creado con la función creacion_df_final()
+        
+        #Creo los datos de estadisticas que se preveen con la media de datos de los últimos 3 partidos en casa o de visitante
+        shots_on_goal_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_on_goal_local'].shift(1) +  \
+                                df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_on_goal_local'].shift(2) +  \
+                                df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_on_goal_local'].shift(3))
+        shots_on_goal_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_on_goal_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_on_goal_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_on_goal_away'].shift(3))
+        shots_off_goal_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_off_goal_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_off_goal_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_off_goal_local'].shift(3))
+        shots_off_goal_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_off_goal_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_off_goal_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_off_goal_away'].shift(3))
+        total_shots_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'total_shots_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'total_shots_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'total_shots_local'].shift(3))
+        total_shots_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'total_shots_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'total_shots_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'total_shots_away'].shift(3))
+        blocked_shots_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'blocked_shots_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'blocked_shots_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'blocked_shots_local'].shift(3))
+        blocked_shots_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'blocked_shots_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'blocked_shots_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'blocked_shots_away'].shift(3))
+        shots_insidebox_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_insidebox_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_insidebox_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_insidebox_local'].shift(3))
+        shots_insidebox_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_insidebox_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_insidebox_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_insidebox_away'].shift(3))
+        shots_outsidebox_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_outsidebox_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_outsidebox_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'shots_outsidebox_local'].shift(3))
+        shots_outsidebox_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_outsidebox_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_outsidebox_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'shots_outsidebox_away'].shift(3))
+        fouls_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'fouls_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'fouls_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'fouls_local'].shift(3))
+        fouls_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'fouls_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'fouls_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'fouls_away'].shift(3))
+        corners_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'corners_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'corners_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'corners_local'].shift(3))
+        corners_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'corners_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'corners_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'corners_away'].shift(3))
+        offsides_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'offsides_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'offsides_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'offsides_local'].shift(3))
+        offsides_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'offsides_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'offsides_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'offsides_away'].shift(3))
+        ball_possession_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'ball_possession_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'ball_possession_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'ball_possession_local'].shift(3))
+        ball_possession_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'ball_possession_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'ball_possession_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'ball_possession_away'].shift(3))
+        yellow_cards_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'yellow_cards_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'yellow_cards_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'yellow_cards_local'].shift(3))
+        yellow_cards_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'yellow_cards_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'yellow_cards_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'yellow_cards_away'].shift(3))
+        red_cards_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'red_cards_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'red_cards_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'red_cards_local'].shift(3))
+        red_cards_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'red_cards_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'red_cards_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'red_cards_away'].shift(3))
+        goalkeeper_saves_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'goalkeeper_saves_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'goalkeeper_saves_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'goalkeeper_saves_local'].shift(3))
+        goalkeeper_saves_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'goalkeeper_saves_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'goalkeeper_saves_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'goalkeeper_saves_away'].shift(3))
+        total_pass_local = np.mean(df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'total_pass_local'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'total_pass_local'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_local'] == id_equipo_local, 'total_pass_local'].shift(3))
+        total_pass_away = np.mean(df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'total_pass_away'].shift(1) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'total_pass_away'].shift(2) +  \
+                                    df_partidos.loc[df_partidos['id_equipo_visitante'] == id_equipo_visitante, 'total_pass_away'].shift(3))
+        
+        #Creo un dataframe de solo estadísticas más los datos de arbitro, estadio, ids, season (todos menos lesionados y titulares)
+        df_datos_nuevos_final = pd.DataFrame({
+                                        'id_equipo_local': id_equipo_local,
+                                            'id_equipo_visitante': id_equipo_visitante,
+                                            'arbitro': arbitro,
+                                            'estadio': estadio,
+                                            'season': season,
+                                        'shots_on_goal_local':shots_on_goal_local,
+                                        'shots_on_goal_away':shots_on_goal_away,
+                                        'shots_off_goal_local':shots_off_goal_local,
+                                        'shots_off_goal_away':shots_off_goal_away,
+                                        'total_shots_local':total_shots_local,
+                                        'total_shots_away':total_shots_away,
+                                        'blocked_shots_local':blocked_shots_local,
+                                        'blocked_shots_away':blocked_shots_away,
+                                        'shots_insidebox_local':shots_insidebox_local,
+                                        'shots_insidebox_away':shots_insidebox_away,
+                                        'shots_outsidebox_local':shots_outsidebox_local,
+                                        'shots_outsidebox_away':shots_outsidebox_away,
+                                        'fouls_local':fouls_local,
+                                        'fouls_away':fouls_away,
+                                        'corners_local':corners_local,
+                                        'corners_away':corners_away,
+                                        'offsides_local':offsides_local,
+                                        'offsides_away':offsides_away,
+                                        'ball_possession_local':ball_possession_local,
+                                        'ball_possession_away':ball_possession_away,
+                                        'yellow_cards_local':yellow_cards_local,
+                                        'yellow_cards_away':yellow_cards_away,
+                                        'red_cards_local':red_cards_local,
+                                        'red_cards_away':red_cards_away,
+                                        'goalkeeper_saves_local':goalkeeper_saves_local,
+                                        'goalkeeper_saves_away':goalkeeper_saves_away,
+                                        'total_pass_local':total_pass_local,
+                                        'total_pass_away':total_pass_away
+                                        }, index = [0])
+        
+            
+        #Aquí añado las nuevas variables que me parecieron interesantes siguiendo el mismo código que como las cree en el método anterior    
+        df_datos_nuevos_final['goles_local_previos'] = df_partidos.groupby('id_equipo_local')['goles_local'].shift(1) + \
+                                    df_partidos.groupby('id_equipo_local')['goles_local'].shift(2) + \
+                                    df_partidos.groupby('id_equipo_local')['goles_local'].shift(3)
+
+        df_datos_nuevos_final['tiros_local_previos'] = df_partidos.groupby('id_equipo_local')['total_shots_local'].shift(1) + \
+                                        df_partidos.groupby('id_equipo_local')['total_shots_local'].shift(2) + \
+                                        df_partidos.groupby('id_equipo_local')['total_shots_local'].shift(3)
+
+        df_datos_nuevos_final['goles_local_previos'] = df_datos_nuevos_final['goles_local_previos'].fillna(df_partidos.groupby('id_equipo_local')['goles_local'].shift(-1))
+        df_datos_nuevos_final['tiros_local_previos'] = df_datos_nuevos_final['tiros_local_previos'].fillna(df_partidos.groupby('id_equipo_local')['total_shots_local'].shift(-1))
+
+        df_datos_nuevos_final['tiros_para_marcar_local'] = np.where(df_datos_nuevos_final['goles_local_previos'] == 0, 
+                                                df_datos_nuevos_final['tiros_local_previos'], 
+                                                df_datos_nuevos_final['tiros_local_previos'] / df_datos_nuevos_final['goles_local_previos'])
+
+        df_datos_nuevos_final['goles_away_previos'] = df_partidos.groupby('id_equipo_visitante')['goles_visitante'].shift(1) + \
+                                        df_partidos.groupby('id_equipo_visitante')['goles_visitante'].shift(2) + \
+                                        df_partidos.groupby('id_equipo_visitante')['goles_visitante'].shift(3)
+
+        df_datos_nuevos_final['tiros_away_previos'] = df_partidos.groupby('id_equipo_visitante')['total_shots_away'].shift(1) + \
+                                        df_partidos.groupby('id_equipo_visitante')['total_shots_away'].shift(2) + \
+                                        df_partidos.groupby('id_equipo_visitante')['total_shots_away'].shift(3)
+
+        df_datos_nuevos_final['goles_away_previos'] = df_datos_nuevos_final['goles_away_previos'].fillna(df_partidos.groupby('id_equipo_visitante')['goles_visitante'].shift(-1))
+        df_datos_nuevos_final['tiros_away_previos'] = df_datos_nuevos_final['tiros_away_previos'].fillna(df_partidos.groupby('id_equipo_visitante')['total_shots_away'].shift(-1))
+
+        df_datos_nuevos_final['tiros_para_marcar_away'] = np.where(df_datos_nuevos_final['goles_away_previos'] == 0, 
+                                                df_datos_nuevos_final['tiros_away_previos'], 
+                                                df_datos_nuevos_final['tiros_away_previos'] / df_datos_nuevos_final['goles_away_previos'])
+
+        df_datos_nuevos_final = df_datos_nuevos_final.drop(['tiros_away_previos','goles_away_previos','tiros_local_previos','goles_local_previos'], axis=1)
+
+        df_datos_nuevos_final['tiros_para_marcar_local'] = df_datos_nuevos_final['tiros_para_marcar_local'].fillna(df_datos_nuevos_final['tiros_para_marcar_local'].mean())
+        df_datos_nuevos_final['tiros_para_marcar_away'] = df_datos_nuevos_final['tiros_para_marcar_away'].fillna(df_datos_nuevos_final['tiros_para_marcar_away'].mean())
+
+        df_datos_nuevos_final['odd_1'] = odd_1
+        df_datos_nuevos_final['odd_x'] = odd_x
+        df_datos_nuevos_final['odd_2'] = odd_2
+        df_datos_nuevos_final['odd_mas_25'] = odd_mas_25
+        df_datos_nuevos_final['odd_menos_25'] = odd_menos_25
+
+        return df_datos_nuevos_final
